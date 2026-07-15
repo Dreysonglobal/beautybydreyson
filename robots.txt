@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acavien.com.ng/sitemap.xml

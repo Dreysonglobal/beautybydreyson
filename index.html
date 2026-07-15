@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skincare Store in Lagos, Nigeria | Acavien Nig Ltd</title>
+  <meta name="description" content="Acavien Nig Ltd is a trusted skincare seller in Lagos, Nigeria. Shop authentic skincare products, body care, serums, and beauty essentials with fast WhatsApp order support." />
+  <meta name="keywords" content="skin care, skincare sellers in lagos, skincare sellers in nigeria, skin care vendor, skincare store lagos, skincare products nigeria, Acavien Nig Ltd" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://acavien.com.ng/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Acavien Nig Ltd" />
+  <meta property="og:title" content="Skincare Store in Lagos, Nigeria | Acavien Nig Ltd" />
+  <meta property="og:description" content="Shop authentic skincare and personal care products from a trusted skincare seller in Lagos, Nigeria." />
+  <meta property="og:url" content="https://acavien.com.ng/" />
+  <meta property="og:image" content="https://acavien.com.ng/images/hero1.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Skincare Store in Lagos, Nigeria | Acavien Nig Ltd" />
+  <meta name="twitter:description" content="Authentic skincare products, body care, and beauty essentials in Lagos, Nigeria." />
+  <meta name="twitter:image" content="https://acavien.com.ng/images/hero1.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Acavien Nig Ltd",
+      "url": "https://acavien.com.ng/",
+      "image": "https://acavien.com.ng/images/hero1.webp",
+      "description": "Trusted skincare seller in Lagos, Nigeria, offering authentic skincare and personal care products.",
+      "telephone": "+2348142526229",
+      "email": "acaviennigltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 2, Polaris Bank Plaza, Opposite Carpark, BBA, Trade Fair Complex",
+        "addressLocality": "Lagos",
+        "addressRegion": "Lagos",
+        "addressCountry": "NG"
+      },
+      "sameAs": [
+        "https://instagram.com/acaviennglltd",
+        "https://wa.me/2348142526229"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lagos"
+        },
+        {
+          "@type": "Country",
+          "name": "Nigeria"
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Acavien Nig Ltd",
+      "url": "https://acavien.com.ng/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://acavien.com.ng/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <p class="eyebrow">Skincare and Beauty Essentials</p>
+      <h1>Acavien Nig Ltd</h1>
+    </div>
+
+    <nav class="main-nav" aria-label="Main">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+    </nav>
+
+    <button id="cart-toggle" class="cart-toggle" aria-label="Open cart">
+      Cart <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero hero-slider">
+      <div class="hero-media">
+        <img id="hero-image" src="" alt="Featured skincare product" />
+      </div>
+      <div class="hero-overlay">
+        <h2 id="hero-title">Glow-driven skincare shopping</h2>
+        <p id="hero-caption">Browse all available products, add to cart, and place your order directly on WhatsApp.</p>
+        <div id="hero-dots" class="hero-dots" aria-label="Hero slider indicators"></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search by name, brand, or type..." />
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="sort-filter">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A-Z</option>
+      </select>
+    </section>
+
+    <section class="about-card" aria-label="Skincare store overview">
+      <h2>Trusted Skin Care Sellers in Lagos, Nigeria</h2>
+      <p>
+        Acavien Nig Ltd is a reliable skin care vendor serving customers in Lagos and across Nigeria with authentic skincare,
+        personal care, and beauty products. If you are searching for skin care sellers in Lagos or skin care sellers in Nigeria,
+        our store provides curated product options, transparent pricing, and fast order support.
+      </p>
+    </section>
+
+    <section>
+      <p id="result-count" class="result-count"></p>
+      <div id="product-grid" class="product-grid"></div>
+      <div id="pagination" class="pagination" aria-label="Product navigation">
+        <button id="prev-page" class="btn btn-clear" type="button">Previous</button>
+        <span id="page-label" class="page-label">Page 1</span>
+        <button id="next-page" class="btn btn-checkout" type="button">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="icon-btn" aria-label="Close cart">X</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-foot">
+      <p><strong>Total:</strong> <span id="cart-total">N0</span></p>
+      <button id="checkout-btn" class="btn btn-checkout">Proceed to WhatsApp Checkout</button>
+      <button id="clear-cart" class="btn btn-clear">Clear Cart</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Acavien Nig Ltd</h3>
+        <p>Suite 2, Polaris Bank Plaza, Opposite Carpark, BBA, Trade Fair Complex</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:08142526229">Tel: 08142526229</a></p>
+        <p><a href="mailto:acaviennigltd@gmail.com">acaviennigltd@gmail.com</a></p>
+        <p><a href="https://wa.me/2348142526229" target="_blank" rel="noopener">WhatsApp: 08142526229</a></p>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <p><a href="https://instagram.com/acaviennglltd" target="_blank" rel="noopener">Instagram: @acaviennglltd</a></p>
+      </div>
+    </div>
+    
+  </footer>
+  <div  class="footer-bottom">
+            <p>&copy; Website built by Dreyson Global. All Rights Reserved.</p>
+            
+        </div>
+
+  <a class="floating-wa" href="https://wa.me/2348142526229" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="floating-call" href="tel:08142526229">Call</a>
+  <div id="cart-toast" class="cart-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
