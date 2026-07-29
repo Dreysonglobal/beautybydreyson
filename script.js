@@ -12,7 +12,7 @@ const products =[
         "brand":  "Facefacts",
         "price":  37000,
         "image":  "images/facefact.webp",
-        "outOfStock": true
+        "outOfStock": false
 
     },
     {
