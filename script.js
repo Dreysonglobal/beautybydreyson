@@ -11,7 +11,9 @@ const products =[
         "name":  "Nourish+ Restore Ceramide Serum",
         "brand":  "Facefacts",
         "price":  37000,
-        "image":  "images/facefact.webp"
+        "image":  "images/facefact.webp",
+        "outOfStock": true
+
     },
     {
         "id":  2,
@@ -137,21 +139,24 @@ const products =[
         "name":  "Simple purifying gel wash",
         "brand":  "Simple",
         "price":  4500,
-        "image":  "images/Simple purifying gel wash.jpg"
+        "image":  "images/Simple purifying gel wash.jpg",
+        "outOfStock": true
     },
     {
         "id":  20,
         "name":  "Simple age resisting wash",
         "brand":  "Simple",
         "price":  4500,
-        "image":  "images/Simple age resisting wash.jpg"
+        "image":  "images/Simple age resisting wash.jpg",
+        "outOfStock": true
     },
     {
         "id":  21,
         "name":  "Simple Micellar gel wash",
         "brand":  "Simple",
         "price":  4500,
-        "image":  "images/Simple Micellar gel wash.jpg"
+        "image":  "images/Simple Micellar gel wash.jpg",
+        "outOfStock": true
     },
     {
         "id":  22,
@@ -424,7 +429,8 @@ const products =[
         "name":  "Facefacts, vitamin c eye cream",
         "brand":  "Facefacts",
         "price":  3000,
-        "image":  "images/60- Facefacts, vitamin c eye cream 3000naira.jpg"
+        "image":  "images/60- Facefacts, vitamin c eye cream 3000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  61,
@@ -564,7 +570,8 @@ const products =[
         "name":  "Facefacts, hyaluronic body lotion",
         "brand":  "Facefacts",
         "price":  6000,
-        "image":  "images/81- Facefacts, hyaluronic body lotion 6000naira.jpg"
+        "image":  "images/81- Facefacts, hyaluronic body lotion 6000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  81,
@@ -620,7 +627,8 @@ const products =[
         "name":  "Facefacts, vitamin c sheet mask",
         "brand":  "Facefacts",
         "price":  1500,
-        "image":  "images/89- Facefacts, vitamin c sheet mask 1500naira.jpg"
+        "image":  "images/89- Facefacts, vitamin c sheet mask 1500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  89,
@@ -648,14 +656,17 @@ const products =[
         "name":  "Facefacts, smoothing honey peel off mask",
         "brand":  "Facefacts",
         "price":  1300,
-        "image":  "images/93- Facefacts, smoothing honey peel off mask 1300naira.jpg"
+        "image":  "images/93- Facefacts, smoothing honey peel off mask 1300naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  93,
         "name":  "Facefacts, energizing orange peel off mask",
         "brand":  "Facefacts",
         "price":  1300,
-        "image":  "images/94- Facefacts, energizing orange peel off mask 1300naira.jpg"
+        "image":  "images/94- Facefacts, energizing orange peel off mask 1300naira.jpg",
+        "outOfStock": true
+
     },
     {
         "id":  94,
@@ -816,7 +827,9 @@ const products =[
         "name":  "Vaseline, gluta-hya serum burst uv lotion",
         "brand":  "Vaseline",
         "price":  7500,
-        "image":  "images/117- Vaseline, gluta-hya serum burst uv lotion 7500naira.jpg"
+        "image":  "images/117- Vaseline, gluta-hya serum burst uv lotion 7500naira.jpg",
+        "outOfStock": true
+
     },
     {
         "id":  117,
@@ -1047,7 +1060,8 @@ const products =[
         "name":  "Facefacts, gel-cream moisturiser",
         "brand":  "Facefacts",
         "price":  6000,
-        "image":  "images/150- Facefacts, gel-cream moisturiser 6000naira.jpg"
+        "image":  "images/150- Facefacts, gel-cream moisturiser 6000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  150,
@@ -1089,14 +1103,16 @@ const products =[
         "name":  "dove body lotion, intense care",
         "brand":  "dove body lotion",
         "price":  5500,
-        "image":  "images/156- dove body lotion, intense care 5500naira.jpg"
+        "image":  "images/156- dove body lotion, intense care 5500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  156,
         "name":  "dove body lotion, restoring care",
         "brand":  "dove body lotion",
         "price":  5500,
-        "image":  "images/156- dove body lotion, restoring care 5500naira.jpg"
+        "image":  "images/156- dove body lotion, restoring care 5500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  157,
@@ -1124,7 +1140,8 @@ const products =[
         "name":  "dove, beauty cream bar",
         "brand":  "dove",
         "price":  1000,
-        "image":  "images/160- dove, beauty cream bar.jpg"
+        "image":  "images/160- dove, beauty cream bar.jpg",
+        "outOfStock": true
     },
     {
         "id":  161,
@@ -1173,28 +1190,32 @@ const products =[
         "name":  "dove pampering",
         "brand":  "dove",
         "price":  7500,
-        "image":  "images/167- dove pampering 7500naira.jpg"
+        "image":  "images/167- dove pampering 7500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  168,
         "name":  "dove glowing",
         "brand":  "dove",
         "price":  7500,
-        "image":  "images/168- dove glowing 7500naira.jpg"
+        "image":  "images/168- dove glowing 7500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  169,
         "name":  "dove calming",
         "brand":  "dove",
         "price":  7500,
-        "image":  "images/169- dove calming 7500naira.jpg"
+        "image":  "images/169- dove calming 7500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  170,
         "name":  "dove relaxing",
         "brand":  "dove",
         "price":  7500,
-        "image":  "images/170- dove relaxing 7500naira.jpg"
+        "image":  "images/170- dove relaxing 7500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  171,
@@ -1297,9 +1318,10 @@ const products =[
     {
         "id":  185,
         "name":  "blackhead control facial scrub",
-        "brand":  "blackhead",
+        "brand":  "beauty formulas",
         "price":  2350,
-        "image":  "images/184- blackhead control facial scrub 2350naira.jpg"
+        "image":  "images/184- blackhead control facial scrub 2350naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  186,
@@ -1446,21 +1468,24 @@ const products =[
         "name":  "ivory glow, vitamin c and vitamin b3 lotion",
         "brand":  "ivory glow",
         "price":  11000,
-        "image":  "images/202- ivory glow, vitamin c and vitamin b3 lotion 11000naira.jpg"
+        "image":  "images/202- ivory glow, vitamin c and vitamin b3 lotion 11000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  207,
         "name":  "ivory glow, tumeric and curcumin lotion",
         "brand":  "ivory glow",
         "price":  11000,
-        "image":  "images/203- ivory glow, tumeric and curcumin lotion 11000naira.jpg"
+        "image":  "images/203- ivory glow, tumeric and curcumin lotion 11000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  208,
         "name":  "ivory glow, retinol and amino acid lotion",
         "brand":  "ivory glow",
         "price":  11000,
-        "image":  "images/204- ivory glow, retinol and amino acid lotion 11000naira.jpg"
+        "image":  "images/204- ivory glow, retinol and amino acid lotion 11000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  209,
@@ -1474,7 +1499,8 @@ const products =[
         "name":  "skeenpoint, 10 percent niacinamide serum",
         "brand":  "skeenpoint",
         "price":  6800,
-        "image":  "images/206- skeenpoint, 10 percent niacinamide serum, 6800naira.jpg"
+        "image":  "images/206- skeenpoint, 10 percent niacinamide serum, 6800naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  211,
@@ -1530,35 +1556,40 @@ const products =[
         "name":  "sknfacts, ceramide vitamin c facial serum",
         "brand":  "sknfacts",
         "price":  4000,
-        "image":  "images/214- sknfacts, ceramide vitamin c facial serum, 4000naira.jpg"
+        "image":  "images/214- sknfacts, ceramide vitamin c facial serum, 4000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  219,
         "name":  "sknfacts, ceramide hydrating face toner",
         "brand":  "sknfacts",
         "price":  4000,
-        "image":  "images/215- sknfacts, ceramide hydrating face toner, 4000naira.jpg"
+        "image":  "images/215- sknfacts, ceramide hydrating face toner, 4000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  220,
         "name":  "sknfacts, ceramide hydrating facial serum",
         "brand":  "sknfacts",
         "price":  4000,
-        "image":  "images/215- sknfacts, ceramide hydrating facial serum, 4000naira.jpg"
+        "image":  "images/215- sknfacts, ceramide hydrating facial serum, 4000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  221,
         "name":  "sknfacts, ceramide acne treatment facial toner",
         "brand":  "sknfacts",
         "price":  4000,
-        "image":  "images/216- sknfacts, ceramide acne treatment facial toner, 4000naira.jpg"
+        "image":  "images/216- sknfacts, ceramide acne treatment facial toner, 4000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  222,
         "name":  "sknfacts, ceramide brightening facial toner",
         "brand":  "sknfacts",
         "price":  4000,
-        "image":  "images/217- sknfacts, ceramide brightening facial toner, 4000naira.jpg"
+        "image":  "images/217- sknfacts, ceramide brightening facial toner, 4000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  223,
@@ -1817,7 +1848,8 @@ const products =[
         "name":  "Advanced clinicals, Aleo vera cream",
         "brand":  "Advanced clinicals",
         "price":  12000,
-        "image":  "images/250- Advanced clinicals, Aleo vera cream, 12000naira.jpg"
+        "image":  "images/250- Advanced clinicals, Aleo vera cream, 12000naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  260,
@@ -1831,119 +1863,136 @@ const products =[
         "name":  "Summer ice, Hydrating bright scrub Gommage gel douche",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/252- Summer ice, Hydrating bright scrub Gommage gel douche, 6500naira.jpg"
+        "image":  "images/252- Summer ice, Hydrating bright scrub Gommage gel douche, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  262,
         "name":  "Summer ice, Nourishing Body wash Avocado and Vitamin E",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/252- Summer ice, Nourishing Body wash Avocado and Vitamin E, 6500naira.jpg"
+        "image":  "images/252- Summer ice, Nourishing Body wash Avocado and Vitamin E, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  263,
         "name":  "Summer ice, Pampering body wash Hyaluronic and Berry",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/252- Summer ice, Pampering body wash Hyaluronic and Berry, 6500naira.jpg"
+        "image":  "images/252- Summer ice, Pampering body wash Hyaluronic and Berry, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  264,
         "name":  "Summer ice, Hydrating body wash cocoa and shea butter",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/253- Summer ice, Hydrating body wash cocoa and shea butter, 6500naira.jpg"
+        "image":  "images/253- Summer ice, Hydrating body wash cocoa and shea butter, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  265,
         "name":  "Summer ice, hydrating bright scrub shower gel",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/254- Summer ice, hydrating bright scrub shower gel, 6500naira.jpg"
+        "image":  "images/254- Summer ice, hydrating bright scrub shower gel, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  266,
         "name":  "Summer ice, Relaxing Body Wash Tumeric and Neem",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/255- Summer ice, Relaxing Body Wash Tumeric and Neem, 6500naira.jpg"
+        "image":  "images/255- Summer ice, Relaxing Body Wash Tumeric and Neem, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  267,
         "name":  "Summer ice, rejuvenating body wash Honey and Apple",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/256- Summer ice, rejuvenating body wash Honey and Apple, 6500naira.jpg"
+        "image":  "images/256- Summer ice, rejuvenating body wash Honey and Apple, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  268,
         "name":  "Summer ice, Relaxing body wash Tumeric and Neem",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/257- Summer ice, Relaxing body wash Tumeric and Neem, 6500naira.jpg"
+        "image":  "images/257- Summer ice, Relaxing body wash Tumeric and Neem, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  269,
         "name":  "Summer ice, Renewal smoothing body lotion urea 10percent",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/258- Summer ice, Renewal smoothing body lotion urea 10percent, 6500naira.jpg"
+        "image":  "images/258- Summer ice, Renewal smoothing body lotion urea 10percent, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  270,
         "name":  "Summer ice, Replenishing body lotion Tea tree and lilies",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/258- Summer ice, Replenishing body lotion Tea tree and lilies, 6500naira.jpg"
+        "image":  "images/258- Summer ice, Replenishing body lotion Tea tree and lilies, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  271,
         "name":  "Summer ice, Rejuvenating body lotion Honey and Apple",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/259- Summer ice, Rejuvenating body lotion Honey and Apple, 6500naira.jpg"
+        "image":  "images/259- Summer ice, Rejuvenating body lotion Honey and Apple, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  272,
         "name":  "Summer ice, Skin nourishing body lotion Avocado and Vitamin E",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/260- Summer ice, Skin nourishing body lotion Avocado and Vitamin E, 6500naira.jpg"
+        "image":  "images/260- Summer ice, Skin nourishing body lotion Avocado and Vitamin E, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  273,
         "name":  "Summer ice, Glow soothing body lotion Oatmeal and almond",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/261- Summer ice, Glow soothing body lotion Oatmeal and almond, 6500naira.jpg"
+        "image":  "images/261- Summer ice, Glow soothing body lotion Oatmeal and almond, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  274,
         "name":  "Summer ice, Skin Glowing body lotion Vitamin c and B",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/262- Summer ice, Skin Glowing body lotion Vitamin c and B3, 6500naira.jpg"
+        "image":  "images/262- Summer ice, Skin Glowing body lotion Vitamin c and B3, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  275,
         "name":  "Summer ice, Naturally indulgent body lotion Ceramide 2percent",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/263- Summer ice, Naturally indulgent body lotion Ceramide 2percent, 6500naira.jpg"
+        "image":  "images/263- Summer ice, Naturally indulgent body lotion Ceramide 2percent, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  276,
         "name":  "Summer ice, Anti aging body lotion collagen and retinol",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/264- Summer ice, Anti aging body lotion collagen and retinol, 6500naira.jpg"
+        "image":  "images/264- Summer ice, Anti aging body lotion collagen and retinol, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  277,
         "name":  "Summer ice, Rose soothing body lotion Rose and orchid extract",
         "brand":  "Summer ice",
         "price":  6500,
-        "image":  "images/265- Summer ice, Rose soothing body lotion Rose and orchid extract, 6500naira.jpg"
+        "image":  "images/265- Summer ice, Rose soothing body lotion Rose and orchid extract, 6500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  278,
@@ -1985,7 +2034,8 @@ const products =[
         "name":  "Skeenpoint, Glow and radiance brithening body lotion",
         "brand":  "Skeenpoint",
         "price":  8500,
-        "image":  "images/270- Skeenpoint, Glow and radiance brithening body lotion, 8500naira.jpg"
+        "image":  "images/270- Skeenpoint, Glow and radiance brithening body lotion, 8500naira.jpg",
+        "outOfStock": true
     },
     {
         "id":  284,
@@ -3286,15 +3336,21 @@ function renderProducts() {
   const list = pageData.items;
   el.resultCount.textContent = "Showing " + pageData.startIndex + "-" + pageData.endIndex + " of " + filtered.length + " products";
   el.grid.innerHTML = list.map(function (p) {
-    return "<article class=\"card\">" +
+    const outOfStock = Boolean(p.outOfStock);
+    const stockBadge = outOfStock ? "<p class=\"stock-badge\">Out of Stock</p>" : "";
+    const buttonMarkup = outOfStock
+      ? "<button class=\"add-btn disabled\" type=\"button\" disabled aria-disabled=\"true\">Out of Stock</button>"
+      : "<button class=\"add-btn\" data-id=\"" + p.id + "\">Add to Cart</button>";
+    return "<article class=\"card" + (outOfStock ? " out-of-stock" : "") + "\">" +
       "<img src=\"" + encodeURI(p.image) + "\" alt=\"" + p.name + "\" loading=\"lazy\" />" +
       "<div class=\"card-body\">" +
       "<p class=\"brand\">" + p.brand + "</p>" +
       "<h3 class=\"title\">" + p.name + "</h3>" +
       "<p class=\"meta\">" + p.category + "</p>" +
+      stockBadge +
       "<div class=\"price-row\">" +
       "<span class=\"price\">" + formatNaira(p.price) + "</span>" +
-      "<button class=\"add-btn\" data-id=\"" + p.id + "\">Add to Cart</button>" +
+      buttonMarkup +
       "</div>" +
       "</div>" +
       "</article>";
@@ -3352,6 +3408,10 @@ function renderCart() {
 function addToCart(id) {
   const product = products.find(function (p) { return p.id === id; });
   if (!product) return;
+  if (product.outOfStock) {
+    showCartToast(product.name + " is out of stock.");
+    return;
+  }
   if (state.cart.has(id)) {
     state.cart.get(id).qty += 1;
   } else {
