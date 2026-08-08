@@ -1,0 +1,15 @@
+{
+  "name": "Beauty By Dreyson",
+  "short_name": "Beauty By Dreyson",
+  "icons": [
+    {
+      "src": "images/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#1C1917",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
