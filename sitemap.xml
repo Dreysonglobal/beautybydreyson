@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://acavien.com.ng/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <loc>https://beautybydreyson.com.ng/</loc>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://beautybydreyson.com.ng/images/logo.png</image:loc>
+      <image:title>Beauty By Dreyson Official Logo - Skin Care Store Lagos</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beautybydreyson.com.ng/images/hero1.webp</image:loc>
+      <image:title>Beauty By Dreyson Skin Care Collection</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://acavien.com.ng/about.html</loc>
-    <lastmod>2026-03-04</lastmod>
+    <loc>https://beautybydreyson.com.ng/about.html</loc>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://beautybydreyson.com.ng/images/logo.png</image:loc>
+      <image:title>About Beauty By Dreyson Skin Care Boutique</image:title>
+    </image:image>
   </url>
 </urlset>
