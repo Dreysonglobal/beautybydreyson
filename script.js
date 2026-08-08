@@ -3846,7 +3846,7 @@ function renderProducts() {
 
     const buttonMarkup = outOfStock
       ? '<button class="add-card-btn" type="button" disabled>Out of Stock</button>'
-      : '<button class="add-card-btn" data-id="' + p.id + '" type="button">Add to Bag</button>';
+      : '<button class="add-card-btn" data-id="' + p.id + '" type="button">Add to Cart</button>';
 
     return '<article class="card' + (outOfStock ? ' out-of-stock' : '') + '">' +
       '<div class="card-image-wrap">' +
@@ -3888,7 +3888,7 @@ function renderCart() {
   if (!items.length) {
     el.cartItems.innerHTML = '<div style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">' +
       '<span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🛍️</span>' +
-      '<p style="font-weight: 700; margin: 0;">Your shopping bag is empty.</p>' +
+      '<p style="font-weight: 700; margin: 0;">Your shopping Cart is empty.</p>' +
       '<p style="font-size: 0.85rem; margin-top: 0.35rem;">Browse our catalog and select your glowing skincare essentials!</p>' +
       '</div>';
     updateCartCounters();
@@ -3932,7 +3932,7 @@ function addToCart(id, qty) {
     state.cart.set(id, itemCopy);
   }
   renderCart();
-  showToast(product.name + " added to your shopping bag ✨");
+  showToast(product.name + " added to your shopping Cart ✨");
 }
 
 function changeQty(id, action) {
@@ -3973,7 +3973,7 @@ function openQuickView(id) {
 
   if (el.modalAddBtn) {
     el.modalAddBtn.disabled = Boolean(product.outOfStock);
-    el.modalAddBtn.textContent = product.outOfStock ? "Out of Stock" : "Add to Bag";
+    el.modalAddBtn.textContent = product.outOfStock ? "Out of Stock" : "Add to Cart";
   }
 
   el.modal.setAttribute("aria-hidden", "false");
@@ -3987,7 +3987,7 @@ function closeQuickView() {
 function checkoutOnWhatsApp() {
   const items = cartArray();
   if (!items.length) {
-    alert("Your shopping bag is empty. Please add products before checking out.");
+    alert("Your shopping Cart is empty. Please add products before checking out.");
     return;
   }
   const total = items.reduce(function (n, i) { return n + (i.price * i.qty); }, 0);
