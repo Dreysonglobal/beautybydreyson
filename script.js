@@ -3977,11 +3977,16 @@ function openQuickView(id) {
   }
 
   el.modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  // Scroll modal to top so user sees the product image first
+  var modalCard = el.modal.querySelector(".modal-card");
+  if (modalCard) modalCard.scrollTop = 0;
 }
 
 function closeQuickView() {
   if (!el.modal) return;
   el.modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 }
 
 function checkoutOnWhatsApp() {
