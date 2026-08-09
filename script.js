@@ -17,19 +17,19 @@ const products = [
   },
   {
     "id": 2,
-    "name": "Facefacts vitamin c lip balm",
-    "brand": "Facefacts",
-    "price": 3500,
-    "image": "images/Face facts vitamin c lip balm.jpg",
-    "category": "Lip Care"
+    "name": "MARY & MAY Glutathione Eye Cream",
+    "brand": "Mary & May",
+    "price": 11500,
+    "image": "images/MARY & MAY GLUTATHIONE EYE CREAM.jpg",
+    "category": "Skincare Essentials"
   },
   {
     "id": 3,
-    "name": "Facefacts collagen lip balm",
-    "brand": "Facefacts",
-    "price": 3500,
-    "image": "images/Face facts collagen lip balm.jpg",
-    "category": "Lip Care"
+    "name": "SKIN AQUA Super Moisture UV Gel SPF50",
+    "brand": "SKIN AQUA",
+    "price": 11500,
+    "image": "images/SKIN AQUA SUPER MOISTURE UV GEL SPF50.jpg",
+    "category": "Sun Care & SPF"
   },
   {
     "id": 4,
@@ -300,19 +300,21 @@ const products = [
   },
   {
     "id": 37,
-    "name": "MARY & MAY Glutathione Eye Cream",
-    "brand": "Mary & May",
-    "price": 11500,
-    "image": "images/MARY & MAY GLUTATHIONE EYE CREAM.jpg",
-    "category": "Skincare Essentials"
+    "name": "Facefacts collagen lip balm",
+    "brand": "Facefacts",
+    "price": 3500,
+    "image": "images/Face facts collagen lip balm.jpg",
+    "category": "Lip Care"
   },
+
+  
   {
     "id": 38,
-    "name": "SKIN AQUA Super Moisture UV Gel SPF50",
-    "brand": "SKIN AQUA",
-    "price": 11500,
-    "image": "images/SKIN AQUA SUPER MOISTURE UV GEL SPF50.jpg",
-    "category": "Sun Care & SPF"
+    "name": "Facefacts collagen lip balm",
+    "brand": "Facefacts",
+    "price": 3500,
+    "image": "images/Face facts collagen lip balm.jpg",
+    "category": "Lip Care"
   },
   {
     "id": 39,
@@ -3675,6 +3677,7 @@ const el = {
   modalTitle: document.getElementById("modal-title"),
   modalPrice: document.getElementById("modal-price"),
   modalStock: document.getElementById("modal-stock"),
+  modalDesc: document.getElementById("modal-desc"),
   modalQtyVal: document.getElementById("modal-qty-val"),
   modalQtyDec: document.getElementById("modal-qty-dec"),
   modalQtyInc: document.getElementById("modal-qty-inc"),
@@ -3954,6 +3957,66 @@ function closeCart() {
   el.cartPanel.setAttribute("aria-hidden", "true");
 }
 
+function getProductDescription(product) {
+  if (product.description && typeof product.description === "string" && product.description.trim()) {
+    return product.description.trim();
+  }
+  if (product.desc && typeof product.desc === "string" && product.desc.trim()) {
+    return product.desc.trim();
+  }
+
+  const nameLower = (product.name || "").toLowerCase();
+  const catLower = (product.category || "").toLowerCase();
+  const brandName = product.brand || "Beauty By Dreyson";
+  const productName = product.name || "Product";
+
+  let benefits = "";
+
+  if (nameLower.includes("snail mucin")) {
+    benefits = "Formulated with pure snail mucin extract to intensely hydrate, repair damaged skin barriers, soothe irritation, and improve natural skin elasticity.";
+  } else if (nameLower.includes("vitamin c")) {
+    benefits = "Enriched with potent Vitamin C antioxidant defense to visibly brighten dull skin, fade hyperpigmentation and dark spots, and reveal a radiant complexion.";
+  } else if (nameLower.includes("collagen")) {
+    benefits = "Infused with skin-plumping collagen to restore firmness, improve elasticity, diminish fine lines, and deeply nourish dry skin.";
+  } else if (nameLower.includes("ceramide")) {
+    benefits = "Packed with essential ceramides to rebuild and strengthen the natural moisture barrier, preventing moisture loss and protecting against harsh environmental dryness.";
+  } else if (nameLower.includes("salicylic acid") || nameLower.includes("salycic acid") || nameLower.includes("bha")) {
+    benefits = "Formulated with Salicylic Acid (BHA) to deeply penetrate and unclog pores, reduce excess oil production, smooth texture, and soothe acne-prone skin.";
+  } else if (nameLower.includes("glycolic acid") || nameLower.includes("aha")) {
+    benefits = "Contains Glycolic Acid (AHA) to gently exfoliate dead surface skin cells, refine texture, and enhance skin clarity for a smooth, glowing look.";
+  } else if (nameLower.includes("lactic acid")) {
+    benefits = "Enriched with gentle Lactic Acid to exfoliate and hydrate rough skin, leaving your face and body feeling soft, smooth, and refreshed.";
+  } else if (nameLower.includes("rice")) {
+    benefits = "Nourished with rich rice water and milk extracts to calm redness, nourish dry patches, and promote a soft, luminous skin tone.";
+  } else if (nameLower.includes("hyaluronic") || nameLower.includes("ha ")) {
+    benefits = "Features multi-molecular Hyaluronic Acid to flood the skin with deep moisture, plumping fine lines and maintaining all-day hydration.";
+  } else if (nameLower.includes("retinol")) {
+    benefits = "Advanced Retinol formula designed to accelerate cell turnover, minimize fine lines, smooth uneven texture, and revitalize aging skin.";
+  } else if (nameLower.includes("niacinamide")) {
+    benefits = "Infused with Niacinamide (Vitamin B3) to refine enlarged pores, balance sebum production, fade dark spots, and strengthen the skin barrier.";
+  } else if (nameLower.includes("turmeric") || nameLower.includes("kojic") || nameLower.includes("arbutin") || nameLower.includes("brightening")) {
+    benefits = "Targeted brightening solution formulated to reduce dark spots, even out hyperpigmentation, and restore natural skin radiance.";
+  } else if (nameLower.includes("sunscreen") || nameLower.includes("spf")) {
+    benefits = "Delivers high broad-spectrum protection against damaging UVA/UVB rays, guarding skin against sunburn, dark spots, and premature aging without leaving a greasy residue.";
+  } else if (catLower.includes("lip care") || nameLower.includes("lip balm") || nameLower.includes("lip oil") || nameLower.includes("lip silk") || nameLower.includes("lip treatment")) {
+    benefits = "Ultra-nourishing lip treatment crafted to heal chapped, dry lips, locking in rich moisture for smooth, soft, and glossy lips.";
+  } else if (catLower.includes("body lotions") || nameLower.includes("lotion") || nameLower.includes("body butter") || nameLower.includes("body cream") || nameLower.includes("body oil")) {
+    benefits = "Luxurious body formulation that absorbs quickly to nourish dry skin, seal in long-lasting moisture, and leave skin velvety soft.";
+  } else if (catLower.includes("cleansers") || nameLower.includes("wash") || nameLower.includes("cleanser") || nameLower.includes("soap")) {
+    benefits = "Gentle yet effective purifying formula that cleanses away dirt, excess oil, and impurities without stripping natural skin moisture.";
+  } else if (catLower.includes("facial serums") || nameLower.includes("serum") || nameLower.includes("essence")) {
+    benefits = "High-potency facial serum formulated for quick absorption, delivering active nutrients deep into the skin for maximum visible results.";
+  } else if (catLower.includes("toners") || nameLower.includes("toner") || nameLower.includes("mist")) {
+    benefits = "Refreshing facial toner that rebalances skin pH, refines pores, and preps the skin to absorb serums and moisturizers more effectively.";
+  } else if (catLower.includes("masks") || nameLower.includes("mask")) {
+    benefits = "Deep-acting treatment mask designed to purify pores, replenish lost hydration, and leave your skin feeling completely refreshed and restored.";
+  } else {
+    benefits = "Carefully crafted dermatological formulation engineered for deep skin nourishment, hydration, and visible radiance.";
+  }
+
+  return brandName + " " + productName + " is an authentic " + (product.category || "skincare product") + ". " + benefits + " Guaranteed 100% genuine and directly sourced by Beauty By Dreyson Lagos.";
+}
+
 function openQuickView(id) {
   const product = products.find(function (p) { return p.id === id; });
   if (!product || !el.modal) return;
@@ -3965,6 +4028,7 @@ function openQuickView(id) {
   if (el.modalTitle) el.modalTitle.textContent = product.name;
   if (el.modalPrice) el.modalPrice.textContent = formatNaira(product.price);
   if (el.modalQtyVal) el.modalQtyVal.textContent = "1";
+  if (el.modalDesc) el.modalDesc.textContent = getProductDescription(product);
 
   if (el.modalStock) {
     el.modalStock.className = "modal-stock-badge " + (product.outOfStock ? "out-of-stock" : "in-stock");
