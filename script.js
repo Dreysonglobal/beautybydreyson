@@ -3620,17 +3620,17 @@ const state = {
 
 const heroSlides = [
   {
-    image: "images/hero1.webp",
+    image: "images/hero1.png",
     title: "Timeless Radiance & Natural Glow",
     caption: "Experience authentic luxury serums, creams, and body lotions for deeply nourished skin."
   },
   {
-    image: "images/hero2.jpg",
+    image: "images/hero3.png",
     title: "100% Genuine Skincare Guaranteed",
     caption: "Carefully curated products directly sourced from dermatologist-trusted global brands."
   },
   {
-    image: "images/hero3.jpg",
+    image: "images/hero2.png",
     title: "Fast Delivery Across Lagos & Nationwide",
     caption: "Order seamlessly via WhatsApp with instant customer care support."
   }

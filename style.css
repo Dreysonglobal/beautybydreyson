@@ -1460,9 +1460,32 @@ main {
 }
 
 .footer-social-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   margin-top: 0.2rem;
   font-weight: 700;
+  color: var(--gold-primary);
+  transition: color 0.25s ease;
+}
+
+.footer-social-link:hover {
+  color: var(--gold-dark);
+}
+
+.footer-social-link .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: rgba(197, 160, 89, 0.16);
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.footer-social-link .social-text {
+  font-size: 0.95rem;
 }
 
 .footer-guarantee-badge {
